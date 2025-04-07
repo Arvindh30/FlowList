@@ -1,7 +1,8 @@
-version: '3.3'
+version: '3.8'
+
 services:
   flowlist:
-    build:
-      context: .
+    image: todolist-app       # 👈 Use the pre-built image from 'docker build'
+    container_name: todolist  # 👈 Give a fixed name to avoid random names
     ports:
       - '8001:80'
