@@ -1,0 +1,7 @@
+version: '3.3'
+services:
+  flowlist:
+    build:
+      context: .
+    ports:
+      - '8001:80'
